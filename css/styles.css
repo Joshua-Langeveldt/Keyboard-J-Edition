@@ -1,0 +1,166 @@
+/*Default Css*/
+
+*,
+*::before,
+*::after {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    color:#fa6ccd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F1717;
+}
+
+
+/*Keyboard Styling*/
+
+.keyboard-base{
+    max-width:2000px;
+    padding:20px;
+    position:absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: rgb(197, 197, 197);
+     border-radius:10px;
+     display:grid;
+     grid-template-columns: repeat(30, 30px);
+     grid-template-rows: repeat(5, 60px);
+     grid-gap: 5px;
+   
+}
+
+.key {
+
+    background-color: rgb(243, 243, 243);
+    border:2px solid black;
+    border-radius: 5px;
+    grid-column:span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+    transition: border 1s  ;
+    animation: lighting 15s infinite;
+
+
+}
+
+
+@keyframes lighting {
+    20% {
+        box-shadow: 0 0 3px 1px rgb(207, 102, 3);
+        text-shadow: 0 0 5px rgb(207, 102, 3);
+        color: #11b9e3;
+    }
+    40% {
+        box-shadow: 0 0 3px 1px rgb(117, 229, 237);
+        text-shadow: 0 0 5px rgb(117, 229, 237);
+        color: #FF6500;
+    }
+    60% {
+        box-shadow: 0 0 3px 1px rgb(144, 4, 9);
+        text-shadow: 0 0 5px rgb(144, 4, 9);
+        color: #0ce061;
+    }
+    80% {
+        box-shadow: 0 0 3px 1px rgb(42, 9, 227);
+        text-shadow: 0 0 5px rgb(42, 9, 227);
+        color: #B80000;
+    }
+    100% {
+        box-shadow: 0 0 3px 1px rgb(81, 5, 95);
+        text-shadow: 0 0 5px rgb(81, 5, 95);
+        color: #fa6ccd;
+    }
+}
+
+
+
+
+
+
+
+/* Keys Styling using grid view*/
+
+.key:hover {
+    border: 6px solid #eeeeee;
+
+}
+
+.delete {
+    grid-column: span 4;
+
+}
+
+.tab{
+    grid-column: span 3;
+}
+
+.backSlash{
+    grid-column: span 3;
+}
+
+.caps {
+    grid-column: span 4;
+}
+
+.enter{
+    grid-column: span 4;
+
+}
+
+.leftShift {
+     grid-column: span 5;
+
+}
+
+.rightShift {
+    grid-column: span 5;
+
+}
+
+.leftCtrl{
+    grid-column: span 3;
+}
+
+.fn{
+    grid-column: span 2;
+}
+
+.leftAlt{
+    grid-column: span 2;
+}
+
+.space {
+    grid-column: span 13;
+}
+
+.rightAlt{
+    grid-column: span 2;
+}
+
+.left{
+    grid-column: span 1.5;
+}
+
+.up{
+    grid-column: span 1.5;
+}
+
+.right{
+    grid-column: span 1.5;
+}
+
+.down{
+    grid-column: span 1.5;
+}
